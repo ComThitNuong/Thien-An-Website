@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Bo 7 Mon - About Us</title>
+
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Poppins:300,400,700&display=swap">
+
+  <style>
+
+    body {
+      background-color: #95999e;
+
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .header {
+      text-align: center;
+      background-color: #333;
+      color: #ecf0f1;
+      padding: 20px;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    .header p {
+      
+      margin: 10px 0 0;
+      font-size: 1.2em;
+    }
+
+    .bio-section {
+      background-color: #95999e;
+
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .bio-content {
+      line-height: 1.6;
+    }
+
+    .bio-content h2 {
+      color: #2c3e50;
+    }
+
+    .bio-content p {
+      margin-bottom: 15px;
+    }
+    
+    button {
+      font-family: 'Big Shoulders Text', cursive;
+      color: #ffffff;
+      font-size: .8em;
+      text-transform: uppercase;
+      font-weight: 300;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      color: #95999e;
+    }
+  </style>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script>
+    // Add smooth scrolling to all links
+    $(document).ready(function() {
+      $("a").on('click', function(event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function() {
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        }
+      });
+
+      // Back to main page button functionality
+      $("#backButton").on("click", function() {
+        // Navigate back to the main page
+        window.location.href = "index.html";
+      });
+    });
+  </script>
+
+</head>
+
+<body>
+  
+
+  <header class="header">
+    <h1>Thien An</h1>
+    <button id="backButton">Back to Main Page</button>
+  </header>
+
+  <section class="bio-section">
+    <div class="bio-content">
+      <h2>About Us</h2>
+      <p>Welcome to Bo 7 Mon or in English, 7 courses of beef, where culinary artistry meets Vietnamese tradition. Our journey is a tapestry woven with resilience, cultural heritage, and a love for authentic cuisine.</p>
+
+      <p>Founded by a Vietnamese refugee, Bo 7 Mon emerged as a beacon of culinary excellence in Orange County, California. Our passion for the art of "7 Courses of Beef" became the cornerstone of our establishment.</p>
+
+      <p>Our commitment to authenticity and a fusion of traditional recipes with a modern twist has transformed Bo 7 Mon into a culinary empire with multiple locations across Orange County.</p>
+
+      <p>Help us continue our journey where every dish tells a story of heritage and every meal is a celebration of the remarkable journey that brought us to your table.</p>
+    </div>
+  </section>
+
+</body>
+
+</html>
